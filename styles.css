@@ -325,10 +325,31 @@ body {
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
     border: 1px solid #e5e7eb;
+    position: relative;
 }
 
 .project-card:hover {
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.project-icon {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+}
+
+.project-icon i {
+    color: white;
+    font-size: 1.4rem;
 }
 
 .project-image {
