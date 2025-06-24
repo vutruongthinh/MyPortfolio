@@ -1,3 +1,40 @@
+// Page Loading Animation
+window.addEventListener('load', function() {
+    const loadingScreen = document.getElementById('loading-screen');
+    
+    // Hide loading screen after page loads
+    setTimeout(() => {
+        loadingScreen.classList.add('fade-out');
+        
+        // Remove loading screen from DOM after animation
+        setTimeout(() => {
+            loadingScreen.remove();
+        }, 500);
+    }, 1000); // Show loading for at least 1 second
+});
+
+// Back to Top Button
+document.addEventListener('DOMContentLoaded', function() {
+    const backToTopButton = document.getElementById('back-to-top');
+    
+    // Show/hide back to top button based on scroll position
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 300) {
+            backToTopButton.classList.add('visible');
+        } else {
+            backToTopButton.classList.remove('visible');
+        }
+    });
+    
+    // Smooth scroll to top when clicked
+    backToTopButton.addEventListener('click', function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+});
+
 // Mobile Navigation Toggle
 document.addEventListener('DOMContentLoaded', function() {
     const hamburger = document.querySelector('.hamburger');
