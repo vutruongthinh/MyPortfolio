@@ -649,36 +649,18 @@ footer {
     }
 }
 
-/* Animations */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
+/* Simplified animations */
 .expertise-card,
 .project-card {
-    animation: fadeInUp 0.6s ease forwards;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Scroll animations */
-@media (prefers-reduced-motion: no-preference) {
-    .expertise-card,
-    .project-card {
-        opacity: 0;
-        animation: none;
-    }
-
-    .expertise-card.animate,
-    .project-card.animate {
-        animation: fadeInUp 0.6s ease forwards;
-    }
+.expertise-card:hover,
+.project-card:hover {
+    transform: translateY(-3px);
 }
+
+/* Remove complex animations for better performance */
 
 /* Additional Professional Enhancements */
 .hero-text {
