@@ -1,0 +1,33 @@
+{
+  "name": "thinh-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio website showcasing PowerShell and Azure expertise",
+  "main": "index.html",
+  "scripts": {
+    "serve": "python -m http.server 8000",
+    "dev": "live-server --port=3000 --open=/index.html",
+    "build": "echo 'No build step required for static HTML'",
+    "deploy": "echo 'Deploy to Cloudflare Pages via Git integration'"
+  },
+  "keywords": [
+    "portfolio",
+    "powershell",
+    "azure",
+    "developer",
+    "cloudflare-pages",
+    "static-site"
+  ],
+  "author": "Thinh",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/portfolio.git"
+  },
+  "homepage": "https://your-portfolio.pages.dev",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

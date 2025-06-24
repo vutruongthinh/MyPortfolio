@@ -1,0 +1,11 @@
+# Profile Image Placeholder
+# Replace this file with your actual profile image
+# Recommended specifications:
+# - Size: 500x500px or higher
+# - Format: JPG, PNG, or WebP
+# - File name: profile-image.jpg
+# - High quality, professional photo
+# - Good lighting and clear background
+
+# You can use this temporary placeholder until you add your actual photo
+# The CSS will automatically handle the styling and border radius
