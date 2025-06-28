@@ -401,6 +401,8 @@ body {
     object-fit: cover;
     border: 5px solid #fbbf24;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    display: block;
+    aspect-ratio: 1 / 1;
 }
 
 .image-decoration {
