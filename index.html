@@ -84,7 +84,7 @@
 
     <main>
         <!-- Introduction Section -->
-        <section id="about" class="hero">
+        <section id="about" class="hero section-spacing-large">
             <div class="container">
                 <div class="hero-content">
                     <div class="hero-text">                        <h1 class="hero-title">
@@ -122,12 +122,14 @@
         </section>
 
         <!-- Expertise Section -->
-        <section id="expertise" class="expertise">
+        <section id="expertise" class="expertise section-spacing-medium section-bg-subtle">
             <div class="container">
-                <h2 class="section-title">My Expertise</h2>
-                <p class="section-subtitle">Technologies and skills I've mastered over 5 years</p>
+                <div class="section-header">
+                    <h2 class="section-title">My Expertise</h2>
+                    <p class="section-subtitle">Technologies and skills I've mastered over 5 years</p>
+                </div>
                 
-                <div class="expertise-grid">
+                <div class="expertise-grid card-grid card-grid-3">
                     <div class="expertise-card">
                         <div class="card-icon">
                             <i class="fas fa-terminal"></i>
@@ -216,11 +218,13 @@
         </section>
 
         <!-- Projects Section -->
-        <section id="projects" class="projects">
-            <div class="container">
-                <h2 class="section-title">Featured Projects</h2>
-                <p class="section-subtitle">Some of my recent work showcased on GitHub</p>
-                  <div class="projects-grid">                    <div class="project-card">
+        <section id="projects" class="projects section-spacing-medium">
+            <div class="container-wide">
+                <div class="section-header">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">Some of my recent work showcased on GitHub</p>
+                </div>
+                  <div class="projects-grid card-grid card-grid-2">                    <div class="project-card">
                         <div class="project-icon">
                             <i class="fas fa-cogs"></i>
                         </div>
@@ -312,13 +316,13 @@
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="contact">
-            <div class="container">
+        <section id="contact" class="contact section-spacing-medium section-bg-accent">
+            <div class="container-narrow">
                 <h2 class="section-title">Get In Touch</h2>
                 <p class="section-subtitle">Let's discuss how we can work together</p>
                 
                 <div class="contact-content">
-                    <div class="contact-info">                        <div class="contact-item">
+                    <div class="contact-info content-block">                        <div class="contact-item">
                             <div class="contact-icon">
                                 <i class="fas fa-envelope"></i>
                             </div>
@@ -363,6 +367,11 @@
                 </div>
             </div>
         </div>    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
 
     <script src="script.js"></script>
 </body>
